@@ -8,9 +8,9 @@ var minify = require('gulp-minify');
 
 var dirs = {
   src: {
-    scss: './src/css/*.scss',
-    js: "./src/js/**/*.js",
-    html: "./src/html/**/*.html",
+    scss: './src/stylesheets/*.scss',
+    js: "./src/javascripts/**/*.js",
+    html: "./src/templates/**/*.html",
     img: "./src/images/**/*.*"
   },
   dist: {
