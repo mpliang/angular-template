@@ -14,10 +14,8 @@ a {
   display: block;
 }
 
-.navbar-fixed {
-  position: relative;
-  height  : 56px;
-  z-index : 998;
+md-toolbar {
+  position: fixed;
 }
 
 footer.page-footer {
