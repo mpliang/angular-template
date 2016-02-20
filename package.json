@@ -1,0 +1,55 @@
+{
+  "name": "test-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "postinstall": "bower i"
+  },
+  "engines": {
+    "node": "4.2.6"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^0.8.5",
+    "body-parser": "^1.15.0",
+    "bower": "^1.7.7",
+    "cookie-parser": "^1.4.1",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "gulp": "^3.9.1",
+    "jwt-simple": "^0.4.1",
+    "moment": "^2.11.2",
+    "mongoose": "^4.4.3",
+    "morgan": "^1.6.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.9.11",
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-cache": "^0.3.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-livereload": "^3.8.1",
+    "gulp-load-plugins": "^1.0.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-nodemon": "^2.0.6",
+    "gulp-rename": "^1.2.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify": "0.0.5",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.1",
+    "gulp-uglify": "^1.5.1",
+    "gulp-sass": "^2.0.4",
+    "gulp-uglify": "^1.4.2",
+    "gulp-watch": "^4.3.5",
+    "run-sequence": "^1.1.4"
+  }
+}
