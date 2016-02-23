@@ -3,75 +3,51 @@
 
   <head>
     <title>Angular Template</title>
-
-    <link rel='stylesheet' href='/vendor/angular-material/angular-material.min.css' />
+    <!-- TODO: Go back to bootstrap for template -->
+    <link rel="stylesheet" href="https://bootswatch.com/flatly/bootstrap.min.css">
     <link rel='stylesheet' href='/css/style.css' />
 
   </head>
 
-  <body ng-app='testApp' layaout="column">
+  <body ng-app='testApp'>
 
     <!-- Navbar -->
-    <div layout="column" layout-fill>
-      <md-toolbar>
-        <div class="md-toolbar-tools">
-          <span>Angular Material Template</span>
-          <!-- fill up the space between left and right area -->
-          <span flex></span>
-          <md-button>
-            Button 1
-          </md-button>
-          <md-button>
-            Button 2
-          </md-button>
-          <md-button>
-            <a ui-sref="login">
-
-              Login/Register
-            </a>
-          </md-button>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Angular Template</a>
         </div>
-      </md-toolbar>
-      <md-content>
 
-        <ui-view></ui-view>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
 
-      </md-content>
-    </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a ui-sref="login">Login/Register</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <ui-view></ui-view>
+
+
 
 
     <!-- TODO: Footer -->
-    <footer class="page-footer light-blue">
-      <div class="container">
-        <div layout="row">
-          <div layout="column">
-            <h1>Footer Content</h1>
+    <footer>
 
-          </div>
-          <div layout="column">
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">About</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">FAQ</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="container">
-          © 2016 Michael Liang
-          <a class="grey-text text-lighten-4 right" href="#!">View Source Code on Github</a>
-        </div>
-      </div>
     </footer>
 
     <script src='/vendor/jquery/dist/jquery.min.js'></script>
     <script src='/vendor/angular/angular.min.js'></script>
-    <script src='/vendor/angular-animate/angular-animate.min.js'></script>
-    <script src='/vendor/angular-aria/angular-aria.min.js'></script>
-    <script src='/vendor/angular-material/angular-material.min.js'></script>
     <script src='/vendor/angular-ui-router/release/angular-ui-router.js'></script>
+    <script src='/vendor/angular-bootstrap/ui-bootstrap.min.js'></script>
     <script src="/js/bundle.js"></script>
 
   </body>

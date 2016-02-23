@@ -1,11 +1,9 @@
 'use strict';
 
-var app = angular.module('testApp', ['ui.router', 'ngMaterial']);
+var app = angular.module('testApp', ['ui.router']);
 
-app.config(function($stateProvider, $urlRouterProvider, $mdThemingProvider) {
+app.config(function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/');
-  $mdThemingProvider.theme('default')
-    .primaryPalette('blue');
 
   $stateProvider
     .state('home', { url: '/', templateUrl: '/templates/home.html' })
